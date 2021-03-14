@@ -179,7 +179,7 @@ body {
 }
 
 .contact-buttons {
-  margin-top: 70px;
+  margin-top: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -195,8 +195,8 @@ body {
 }
 .contact-buttons .contact-tel i,
 .contact-buttons .contact-email i {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -206,9 +206,10 @@ body {
   background: #ffffff;
   box-shadow: 4px 4px 8px #cccccc, -4px -4px 6px #ffffff;
   display: inline-flex;
-  color: #130f0f;
+  color: #4267b2;
   cursor: pointer;
   margin: 5px;
+  z-index: 100;
 }
 
 .contact-buttons .contact-tel i:active,
@@ -224,7 +225,7 @@ body {
     display: none
 }
 .contact-tel .tel-number.show {
-  height: 25px;
+  height: 30px;
   width: 165px;
   font-size: 0.75rem;
   font-weight: 500;
@@ -233,24 +234,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -10;
+  z-index: -100;
   background: linear-gradient(225deg, #f0efef, #ffffff);
   box-shadow: -7px 7px 10px #f1f0f0, 7px -7px 10px #ffffff;
 }
 
 .contact-email .email.show {
-    height: 25px;
-    width: 150px;
+    height: 30px;
+    width: 165px;
     font-size: 0.75rem;
     font-weight: 500;
     border-radius: 11px;
-    margin-left: -15px;
+    margin-left: -20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -10;
     background: linear-gradient(225deg, #f0efef, #ffffff);
     box-shadow: -7px 7px 10px #f1f0f0, 7px -7px 10px #ffffff;
+    
   }
 
 .skills {
@@ -301,7 +302,7 @@ body {
     height: 80%;
     top: 50%;
     left: 60%;
-    margin-top: 24px;
+    margin-top: 14px;
   }
   .project-button {
     margin-top: 0;
