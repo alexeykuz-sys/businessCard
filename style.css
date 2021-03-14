@@ -93,7 +93,7 @@ body {
 }
 
 .text-wrapper .about{
-    margin-bottom: 45px;
+    margin-bottom: 11px;
   color: #130f0f;
   font-size: .8rem;
   font-weight: 400;
@@ -158,7 +158,7 @@ body {
 }
 
 .contact-buttons {
-  margin-top:33px;
+  margin-top:13px;
   display: flex;
   flex-direction: column;
 }
@@ -169,4 +169,32 @@ body {
   color: #130f0f;
   padding: 5px;
   font-weight: 300;
+}
+
+.skills {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills li {
+
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: linear-gradient(145deg, #c6c7c9, #ffffff);
+  border-radius: 100%;
+  background: #ffffff;
+  box-shadow: 4px 4px 8px #cccccc, -4px -4px 6px #ffffff;
+  display: inline-flex;
+  color: #130f0f;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.skills li i {
+  
+  color: red;
 }
