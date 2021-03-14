@@ -27,19 +27,14 @@ body {
 }
 
 .left-wrapper {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  top: 22px;
-  left: 20px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .image-wrapper {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
   width: 100px;
@@ -47,6 +42,7 @@ body {
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 5px 5px 18px #cccccc, -5px -5px 18px #ffffff;
+  margin: 17px;
 }
 
 .image-wrapper .image-inner-area {
@@ -61,18 +57,18 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-/* social icons */
+
+/* social-icons-mobile */
 
 .left-wrapper .social-icons {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 17px;
-}
+} 
 
 .social-icons a {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -82,9 +78,11 @@ body {
   box-shadow: 4px 4px 8px #cccccc, -4px -4px 6px #ffffff;
   display: inline-flex;
   color: #130f0f;
-  margin: 7px;
+  margin: 15px;
   cursor: pointer;
-}
+} 
+
+
 
 .social-icons a:active {
   background: linear-gradient(145deg, #c6c7c9, #ffffff);
@@ -104,11 +102,11 @@ body {
   color: #211f1f;
 }
 
+
+
 /* card body */
 .card-body {
   position: absolute;
-  width: 100%;
-  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -122,8 +120,9 @@ body {
 .text-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+  
 }
 
 .text-wrapper .name {
@@ -134,7 +133,7 @@ body {
   text-transform: uppercase;
   text-shadow: 6px 6px 15px rgba(255, 253, 253, 0.5),
     6px -6px 15px rgba(255, 255, 255, 0.8);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* hr {
@@ -142,7 +141,6 @@ body {
     width: 50%;
 } */
 .text-wrapper .about {
-  margin-bottom: 11px;
   color: #130f0f;
   font-size: 0.8rem;
   font-weight: 400;
@@ -186,13 +184,15 @@ body {
   flex-direction: column;
   width: 300px;
 }
+
 .contact-buttons .contact-tel,
-.contact-email {
+.contact-email{
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  
+
 }
+
 .contact-buttons .contact-tel i,
 .contact-buttons .contact-email i {
   width: 30px;
@@ -255,7 +255,7 @@ body {
   }
 
 .skills {
-  margin-bottom: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -284,31 +284,44 @@ body {
   .card {
     width: 500px;
     height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
   }
   .left-wrapper {
+    position: relative;
+    align-items:center;
+    justify-content: center;
     flex-direction: column;
-    top: 26px;
-    left: 30px;
+     width: 30%;
+   
+  }
+  .left-wrapper img{
+    margin: 0;
   }
   .left-wrapper .social-icons {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 17px;
   }
 
   .card-body {
-    width: 320px;
-    height: 80%;
-    top: 50%;
-    left: 60%;
-    margin-top: 14px;
+    top:0;
+    position: relative;
+    left: 0;
+    transform: translate(0%,0%);
+    width: 70%;
+    margin-top: 30px;
+  }
+  .skills{
+    margin: 8px;
   }
   .project-button {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .contact-buttons {
+    display: flex;
     margin-top: 13px;
     flex-direction: column;
   }
