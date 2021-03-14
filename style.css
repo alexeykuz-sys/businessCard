@@ -195,8 +195,8 @@ body {
 
 .contact-buttons .contact-tel i,
 .contact-buttons .contact-email i {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -208,7 +208,7 @@ body {
   display: inline-flex;
   color: #4267b2;
   cursor: pointer;
-  margin: 5px;
+  margin: 7px;
   z-index: 100;
 }
 
@@ -282,7 +282,7 @@ body {
 
 @media (min-width: 768px) {
   .card {
-    width: 500px;
+    width: 510px;
     height: 300px;
     flex-direction: row;
     justify-content: center;
@@ -291,7 +291,7 @@ body {
   .left-wrapper {
     position: relative;
     align-items:center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
      width: 30%;
    
@@ -304,6 +304,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .left-wrapper .social-icons a {
+    margin: 7px;
+  }
 
   .card-body {
     top:0;
@@ -311,18 +314,25 @@ body {
     left: 0;
     transform: translate(0%,0%);
     width: 70%;
-    margin-top: 30px;
+    margin-top: 34px;
+  }
+
+  .text-wrapper {
+    margin-right: 95px;
   }
   .skills{
     margin: 8px;
   }
   .project-button {
-    margin-top: 10px;
+    margin-top: 4px;
+    margin-right: 90px;
   }
 
   .contact-buttons {
     display: flex;
-    margin-top: 13px;
+    margin-top: 0px;
     flex-direction: column;
+    align-items: flex-end;
+    margin-right: 26px;
   }
 }
